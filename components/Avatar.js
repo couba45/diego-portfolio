@@ -5,7 +5,7 @@ const Avatar = () => {
   return (
     <div className="hidden xl:flex xl:max-w-none">
       <Image
-        src={"public/avatar-no-bg.png"}
+        src={`${process.env.NEW_PATH_IMG}/avatar-no-bg.png`}
         width={737}
         height={678}
         alt=""
