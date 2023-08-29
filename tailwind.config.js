@@ -41,7 +41,7 @@ module.exports = {
       backgroundImage: {
         explosion: 'url("/bg-explosion.png")',
         circles: `url('${process.env.NEW_PATH_IMG}/bg-circles.png')`,
-        circleStar: 'url("/circle-star.svg")',
+        circleStar: `url("${process.env.NEW_PATH_IMG}/circle-star.svg")`,
         site: `url("${process.env.NEW_PATH_IMG}/bg-site-new.jpg")`,
       },
       animation: {
