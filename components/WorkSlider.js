@@ -5,19 +5,19 @@ const workSlides = {
       images: [
         {
           title: "title",
-          path: "/thumb1.jpg",
+          path: `${process.env.NEW_PATH_IMG}/thumb1.jpg`,
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
+          path: `${process.env.NEW_PATH_IMG}/thumb2.jpg`,
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
+          path: `${process.env.NEW_PATH_IMG}/thumb3.jpg`,
         },
         {
           title: "title",
-          path: "/thumb4.jpg",
+          path: `${process.env.NEW_PATH_IMG}/thumb4.jpg`,
         },
       ],
     },
@@ -25,19 +25,19 @@ const workSlides = {
       images: [
         {
           title: "title",
-          path: "/thumb4.jpg",
+          path: `${process.env.NEW_PATH_IMG}/thumb4.jpg`,
         },
         {
           title: "title",
-          path: "/thumb1.jpg",
+          path: `${process.env.NEW_PATH_IMG}/thumb1.jpg`,
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
+          path: `${process.env.NEW_PATH_IMG}/thumb2.jpg`,
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
+          path: `${process.env.NEW_PATH_IMG}/thumb3.jpg`,
         },
       ],
     },
@@ -69,12 +69,12 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-[240px]  sm:h-[340px] "
+      className="h-[280px]  sm:h-[480px] "
     >
       {workSlides.slides.map((slide, index) => {
         return (
           <SwiperSlide key={index}>
-            <div>
+            <div className="grid grid-cols-2 grid-rows-2 gap-4 ">
               {slide.images.map((image, index) => {
                 return (
                   <div key={index}>
