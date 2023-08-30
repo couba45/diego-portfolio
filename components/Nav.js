@@ -48,7 +48,7 @@ const Nav = () => {
       <div className="flex w-full xl:flex-col items-center justify-between xl:justify-center bg-gray-900 gap-y-10 px-4 md:px-40 xl:py-4 xl:px-0 h-[80px] xl:h-max backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full">
         {navData.map((link, index) => {
           return (
-            <a
+            <Link
               key={index}
               href={link.path}
               className={`${
@@ -59,7 +59,7 @@ const Nav = () => {
               <span className="absolute w-auto p-2   xl:bottom-3 xl:origin-right left-[50%] translate-x-[-50%] xl:left-auto bottom-20  xl:translate-x-0 xl:right-16 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 group-hover:scale-100">
                 {link.name}
               </span>
-            </a>
+            </Link>
           );
         })}
       </div>
