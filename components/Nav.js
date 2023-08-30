@@ -10,26 +10,26 @@ import {
 
 // nav data
 export const navData = [
-  { name: "home", path: `${process.env.NEW_PATH_IMG}/`, icon: <HiHome /> },
+  { name: "home", path: `/`, icon: <HiHome /> },
   {
     name: "about",
-    path: `${process.env.NEW_PATH_IMG}/about`,
+    path: `/about`,
     icon: <HiUser />,
   },
   {
     name: "services",
-    path: `${process.env.NEW_PATH_IMG}/services`,
+    path: `/services`,
     icon: <HiRectangleGroup />,
   },
   {
     name: "projects",
-    path: `${process.env.NEW_PATH_IMG}/work`,
+    path: `/work`,
     icon: <HiViewColumns />,
   },
 
   {
     name: "contact",
-    path: `${process.env.NEW_PATH_IMG}/contact`,
+    path: `/contact`,
     icon: <HiEnvelope />,
   },
 ];
