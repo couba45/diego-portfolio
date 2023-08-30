@@ -19,7 +19,7 @@ const transitionVariants = {
 const Transition = () => {
   return (
     <>
-      <motion.div
+      {/* <motion.div
         variants={transitionVariants}
         initial="initial"
         animate="animate"
@@ -48,7 +48,7 @@ const Transition = () => {
         transition={{ delay: 0.6, duration: 0.6, ease: "easeInOut" }}
       >
         1
-      </motion.div>
+      </motion.div> */}
     </>
   );
 };
