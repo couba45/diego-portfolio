@@ -9,8 +9,8 @@ import { fadeIn } from "../../variants";
 
 const Services = () => {
   return (
-    <div className="h-full bg-primary/30 py-36 pb-4 ">
-      <div className="h-full  flex items-center overflow-scroll xl:overflow-hidden   no-scrollbar">
+    <div className="h-full bg-primary/30 py-36">
+      <div className="h-full md:h-fit xl:h-full  flex items-center overflow-scroll xl:overflow-hidden   no-scrollbar">
         <div className="container mx-auto">
           <div className="flex  flex-col xl:flex-row gap-x-8">
             {/* text */}
