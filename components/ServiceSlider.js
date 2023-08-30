@@ -44,22 +44,22 @@ const serviceData = [
 
 const ServiceSlider = () => {
   return (
-    <div className="swipe-wrapper">
-      <Swiper
-        breakpoints={{
-          320: { slidesPerView: 1, spaceBetween: 15 },
-          640: { slidesPerView: 3, spaceBetween: 15 },
-        }}
-        freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[FreeMode, Pagination]}
-        className="h-[240px]  sm:h-[340px] "
-      >
-        {serviceData.map((item, itemIndex) => {
-          return (
-            <SwiperSlide key={itemIndex}>
+    <Swiper
+      breakpoints={{
+        320: { slidesPerView: 1, spaceBetween: 15 },
+        640: { slidesPerView: 3, spaceBetween: 15 },
+      }}
+      freeMode={true}
+      pagination={{
+        clickable: true,
+      }}
+      modules={[FreeMode, Pagination]}
+      className="h-[240px]  sm:h-[340px] "
+    >
+      {serviceData.map((item, itemIndex) => {
+        return (
+          <div key={itemIndex} className="swiper-wrapper">
+            <SwiperSlide>
               <div className="bg-[rgba(52,211,153,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(138,255,222,0.15)] transition-all duration-300">
                 {/* icon */}
                 <div className="text-4xl text-emerald-400 mb-4 ">
@@ -78,10 +78,10 @@ const ServiceSlider = () => {
                 </div>
               </div>
             </SwiperSlide>
-          );
-        })}
-      </Swiper>
-    </div>
+          </div>
+        );
+      })}
+    </Swiper>
   );
 };
 
