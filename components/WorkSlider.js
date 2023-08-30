@@ -64,6 +64,7 @@ import { BsArrowRight } from "react-icons/bs";
 const WorkSlider = () => {
   return (
     <Swiper
+      centeredSlides={true}
       spaceBetween={10}
       pagination={{
         clickable: true,
