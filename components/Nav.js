@@ -52,7 +52,7 @@ const Nav = () => {
               key={index}
               href={link.path}
               className={`${
-                link.path === pathname && "bg-emerald-200 text-black rounded-xl"
+                link.path === pathname && "bg-emerald-300 text-black rounded-xl"
               } relative group hover:bg-emerald-400 hover:text-black p-4 rounded-3xl hover:rounded-xl bg-gray-800 transition-all`}
             >
               <div className="">{link.icon}</div>
