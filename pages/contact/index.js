@@ -171,7 +171,7 @@ const Contact = () => {
                     onBlur={onBlur}
                     focusBorderColor="#34d399"
                     errorBorderColor="red.300"
-                    className="textarea"
+                    className="textarea normal-case"
                   />
                   <FormErrorMessage>Required</FormErrorMessage>
                 </FormControl>
